@@ -26,5 +26,5 @@ Was wird hier eingesetzt?
 * node server/pingXaddrHosts.js
 * node server/onvifDiscovery.js
 * node server/server.js
-- Öffne deinen Browser und greif auf das Dashboard über http://localhost:3001 zu.
+- Öffne deinen Browser und greif auf das Dashboard über http://localhost:3001 oder http://<ip-deines-servers>:3001 zu.
 - Tipp: Stell sicher, dass du Node.js auf deinem Server-System hast, bevor du das Projekt startest. Wenn nicht, hol es dir hier: nodejs.org.
