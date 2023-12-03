@@ -1,0 +1,21 @@
+{
+  "cameraInfoArray": [
+    {
+      "hostname": "192.168.95.83",
+      "activeSource": {
+        "sourceToken": "000",
+        "profileToken": "000",
+        "encoding": "H264",
+        "resolution": {
+          "width": 4096,
+          "height": 2160
+        },
+        "fps": 17,
+        "bitrate": 4477
+      },
+      "rtspStreamUri": "rtsp://192.168.95.83:554/user=admin_password=6QNMIQGe_channel=1_stream=0&amp;onvif=0.sdp?real_st",
+      "xaddrHost": "192.168.95.83:8899",
+      "pingResult": 6.353
+    }
+  ]
+}

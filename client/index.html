@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <h1>Camera-Dashboard</h1>
+    <div id="cameraInfoContainer"></div>
+
+    <script src="js/socket.io.js" crossorigin="anonymous"></script>
+
+    <script>
+        const socket = io();
+
+        // Event, um die Kamerainformationen zu empfangen
+        // Innerhalb der Socket-Verbindung
+        socket.on('cameraInfo', (data) => {
+            const cameraInfoArray = data.cameraInfoArray; // Zugriff auf das eigentliche Array
+            console.log('Received cameraInfo:', cameraInfoArray);
+
+            const container = document.getElementById('cameraInfoContainer');
+            container.innerHTML = '';
+
+            cameraInfoArray.forEach((camera) => {
+                console.log('Processing camera:', camera); // Hinzugefügt
+
+                const cameraDiv = document.createElement('div');
+                cameraDiv.classList.add('camera');
+
+                cameraDiv.innerHTML = `
+            <p>Hostname: ${camera.hostname}</p>
+            <p>Resolution: ${camera.activeSource.resolution.width}x${camera.activeSource.resolution.height}</p>
+            <p>FPS: ${camera.activeSource.fps}</p>
+            <p>Bitrate: ${camera.activeSource.bitrate}</p>
+            <p class="long-string">RTSP Stream URI: ${camera.rtspStreamUri}</p>
+            <p>xaddrHost: ${camera.xaddrHost}</p>
+            <p>Ping Result: ${camera.pingResult}</p>
+        `;
+
+                container.appendChild(cameraDiv);
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>
