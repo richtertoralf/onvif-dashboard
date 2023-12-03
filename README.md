@@ -2,6 +2,8 @@
 Dashboard zur Anzeige von onvif-Kamerainformationen
 ## Projektname: Camera Dashboard
 
+<img src="https://github.com/richtertoralf/onvif-dashboard/blob/7f1aa7f6e301eab8770972953998476c9e7856c6/camera-dashboard.jpg" style="width:60%;">
+
 ## Was geht hier ab?
 Du hast hier ein Camera Dashboard-Projekt, in einem frühen Entwurfsstadium, vor dir. Das Dashboard zeigt dir Echtzeitinformationen von Kameras an. Das Projekt passiert mit einem Node.js-Server und Socket.IO, die die Informationen fast in Echtzeit an deinen Browser weiterreichen. Die Kameradaten kommen aus einer JSON-Datei, die von einem Server-Skript ständig auf dem Laufenden gehalten wird. Das Dashboard ist mit HTML, CSS und JavaScript gemacht.
 
