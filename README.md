@@ -22,7 +22,9 @@ Was wird hier eingesetzt?
 
 - Klone das Repository auf deinen Rechner.
 - Installiere die nötigen Node.js-Module mit npm install.
-- Starte den Server mit node server.js und die Hilfsprozesse.....
-  
+- Starte den Server und die Hilfsprozesse:
+* node server/pingXaddrHosts.js
+* node server/onvifDiscovery.js
+* node server/server.js
 - Öffne deinen Browser und greif auf das Dashboard über http://localhost:3001 zu.
 - Tipp: Stell sicher, dass du Node.js auf deinem Server-System hast, bevor du das Projekt startest. Wenn nicht, hol es dir hier: nodejs.org.
