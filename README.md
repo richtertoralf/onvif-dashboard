@@ -21,7 +21,7 @@ Was wird hier eingesetzt?
 ## Wie benutze ich dieses Teil?
 
 - Klone das Repository auf deinen Rechner.
-- Installiere die nötigen Node.js-Module mit npm install.
+- Installiere die nötigen Node.js-Module mit `npm install`. Der Befehl `npm install` liest die package.json-Datei und installiert alle aufgeführten Abhängigkeiten in das lokale node_modules-Verzeichnis. 
 - Starte den Server und die Hilfsprozesse:
   * node server/pingXaddrHosts.js
   * node server/onvifDiscovery.js
